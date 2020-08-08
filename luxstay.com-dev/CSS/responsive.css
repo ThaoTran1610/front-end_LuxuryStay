@@ -1,0 +1,225 @@
+@media only screen and (max-width: 320px) {
+    .main-content-letgo-danang .row-letgo-danang .col-2 {
+        max-width: 50%;
+    }
+    .location,
+    .type-place,
+    .price-promo,
+    .price-place,
+    .bed-room {
+        display: none;
+    }
+    .day-fill {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .main-content-letgo-danang .row-letgo-danang .col-2 {
+        max-width: 50%;
+    }
+    .location,
+    .type-place,
+    .price-promo,
+    .price-place,
+    .bed-room {
+        display: none;
+    }
+    .day-fill {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content-letgo-danang .row-letgo-danang .col-2 {
+        max-width: 50%;
+    }
+    .location,
+    .type-place,
+    .price-promo,
+    .price-place,
+    .bed-room {
+        display: none;
+    }
+    .day-fill {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-content-letgo-danang .row-letgo-danang .col-2 {
+        max-width: 50%;
+    }
+    .location,
+    .type-place,
+    .price-promo,
+    .price-place,
+    .bed-room {
+        display: none;
+    }
+    .day-fill {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .main-content-letgo-danang .row-letgo-danang .col-2 {
+        max-width: 50%;
+    }
+    .location,
+    .type-place,
+    .price-promo,
+    .price-place,
+    .bed-room {
+        display: none;
+    }
+    .day-fill {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 841px) {
+    .main-content-letgo-danang .row-letgo-danang .col-2 {
+        max-width: 25%;
+    }
+    .location,
+    .type-place,
+    .price-promo,
+    .price-place,
+    .bed-room {
+        display: none;
+    }
+    .day-fill {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main-content-letgo-danang .row-letgo-danang .col-2 {
+        max-width: 20%;
+    }
+    .location,
+    .type-place,
+    .price-promo,
+    .price-place,
+    .bed-room {
+        display: block;
+    }
+    .day-fill {
+        display: none;
+    }
+}
+
+
+/* -----------RESPONSIVE HEADER */
+
+@media (max-width: 1086px) {
+    .search-wrapper {
+        display: none;
+    }
+    .menu-toggle {
+        margin-top: 1.25em;
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .menu-toggle::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+    }
+    .navbar-collapse {
+        margin-top: 2em;
+        display: none;
+    }
+    .navbar-collapse.active {
+        display: block;
+        width: 40%;
+        margin-left: 0;
+        float: left;
+    }
+    .navbar-collapse.active .navbar-nav {
+        display: block;
+    }
+    .navbar-collapse.active .navbar-nav .menu-item {
+        width: 100%;
+        display: block;
+        margin: 0 0.5em;
+    }
+    .navbar-collapse.active .navbar-nav .is-become-host::before {
+        margin-top: -.8em;
+    }
+    .navbar-collapse.active .navbar-nav .menu-popover img {
+        margin-left: .1em;
+    }
+}
+
+@media(max-width: 760px) {
+    .slider-image {
+        width: 100%;
+    }
+    .description2020 {
+        width: 100%;
+        height: 100px;
+    }
+    .image-wrapper {
+        width: 250%;
+        height: 330px;
+    }
+    .letgo-wrapper {
+        width: 250%;
+        height: 450px;
+    }
+    .image-content {
+        height: 330px;
+    }
+    .letgo-content {
+        height: 450px;
+    }
+    .btn-left {
+        visibility: hidden;
+    }
+    .btn-right {
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 1024px) {
+    .navigation {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 0px 325px;
+    }
+}
+
+@media(max-width: 920px) {
+    .navigation {
+        padding: 0px 195px;
+    }
+}
+
+@media(max-width: 760px) {
+    .navigation {
+        padding: 0px 192px;
+    }
+}
+
+@media(max-width: 460px) {
+    .navigation {
+        padding: 0px 25px;
+    }
+}
+
+@media(max-width: 380px) {
+    .navigation {
+        padding: 0 0 0 54px;
+    }
+    .navigate ul li {
+        padding: 0 4px;
+    }
+}

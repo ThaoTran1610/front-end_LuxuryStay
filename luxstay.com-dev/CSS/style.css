@@ -1,0 +1,1238 @@
+*,
+ :after,
+ :before {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ------------------------ HEADER ----------------------*/
+
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 99999;
+    clear: both;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.search-icon {
+    display: none;
+}
+
+#wrapper-navbar {
+    position: relative;
+    margin: initial;
+    padding: initial;
+    box-sizing: border-box;
+}
+
+.custom-logo-link {
+    margin: 1em 0.5em 0.5em 1em;
+    padding: 0.5em;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .04);
+    border-radius: 50%;
+    float: left;
+}
+
+.custom-logo-link img {
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    fill: currentColor
+}
+
+.search-wrapper {
+    display: inline-block;
+    margin-top: 1.2em;
+    margin-left: 1em;
+}
+
+.search-field-wrap {
+    background-color: rgba(0, 0, 0, .04);
+    transition: transform .4s, -webkit-transform .4s;
+    border-radius: 8px;
+}
+
+.search-location {
+    padding-left: 0.5em;
+    float: left;
+}
+
+.search-field-wrap .booking-field {
+    padding: 10px 16px;
+    box-sizing: content-box;
+}
+
+.search-box .booking-field {
+    border-radius: 6px;
+    height: 27px;
+    align-items: center;
+    padding: 0 1rem;
+    box-shadow: none;
+    align-self: center;
+}
+
+.search-location-icon::before {
+    content: '\f002';
+    font-family: fontAwesome;
+}
+
+.search-location-icon {
+    float: left;
+}
+
+.booking-input {
+    float: left;
+    padding-left: 1em;
+    flex-direction: column;
+}
+
+.booking-input-text {
+    font-size: 14px;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    font-size: 1rem;
+    height: auto;
+    line-height: 1.5;
+    border-radius: 0 !important;
+    background: transparent;
+    font-weight: 700;
+}
+
+.time-location-icon::before {
+    content: '\f00d';
+    font-family: fontAwesome;
+}
+
+.time-location-icon {
+    float: left;
+    display: none;
+}
+
+.search-calender-icon {
+    float: left;
+}
+
+.search-calender-icon::before {
+    content: '\f133';
+    font-family: fontAwesome;
+}
+
+.trigger-date-range {
+    margin-left: 0.5em;
+    border: none;
+    background: none;
+    font-size: 1em;
+    color: #222;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 5px;
+    font-weight: 700;
+}
+
+.search-user-icon {
+    float: left;
+}
+
+.search-user-icon::before {
+    content: '\f007';
+    font-family: fontAwesome;
+    line-height: 20px;
+}
+
+.modal-booking-time {
+    float: left;
+    padding-left: 0.5em;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+.modal-booking-time .cursor {
+    line-height: 5px;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.search-date {
+    float: left;
+}
+
+.search-guest {
+    float: left;
+}
+
+.booking-btn {
+    border-radius: 50px;
+    padding: 0 21px;
+    margin: 0.2rem .5rem;
+    height: 36px;
+    border-radius: 4px;
+    box-shadow: none;
+    align-self: center;
+    background: #555;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all .3s;
+    text-align: center;
+}
+
+.navbar-collapse {
+    float: right;
+    margin-right: 0.5em;
+}
+
+.navbar-collapse .navbar-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-collapse .navbar-nav .menu-item {
+    list-style: none;
+    position: relative;
+}
+
+.navbar-collapse .navbar-nav .menu-item .nav-link {
+    display: block;
+    margin: 1em 0;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+.is-become-host:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fb9236;
+    left: 55px;
+    top: 30px;
+}
+
+.menu-popover {
+    display: inline-block;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 1.2em 0.5em;
+    padding: 0.5em 1em;
+    background-color: #f6f6f6;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all .3s linear;
+}
+
+.menu-popover img {
+    width: 2em;
+    border-style: none;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+.menu-popover a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.btn-popover-dropdown::before {
+    content: '\f0d7';
+    font-family: fontAwesome;
+    line-height: 20px;
+    right: 1em;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* --------- END HEADER  ------------*/
+
+
+/* Welcome */
+
+.welcome {
+    width: 100%;
+    height: auto;
+}
+
+.welcome .welcome-title {
+    padding: 0px 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+}
+
+.welcome-title h3 {
+    font-size: 28px;
+}
+
+.welcome-title p {
+    color: #222;
+    font-size: 16px;
+}
+
+.welcome-title p a {
+    color: #222;
+    font-size: 16px;
+}
+
+.welcome .welcome-selection {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-selection .slide-items {
+    height: auto;
+    overflow: hidden;
+}
+
+.slide-items .item {
+    float: left;
+    width: 16%;
+    height: auto;
+}
+
+.item {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 14px;
+}
+
+.img-session {
+    width: 100%;
+    height: 105px;
+    overflow: hidden;
+    border-radius: 12px 14px 0px 0px;
+}
+
+.text {
+    padding: 12.8px 14px;
+}
+
+.text h3 {
+    margin: 0px;
+}
+
+.item .text .description {
+    color: grey;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+
+/* Hot Places */
+
+.head {
+    padding: 1em 1em;
+}
+
+.slider-title {
+    text-align: left;
+}
+
+
+/* -------------------- */
+
+.slider {
+    padding: 0 0.7em;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    padding: 0 1em;
+}
+
+.slick-slide {
+    padding: 0 0.5em;
+    float: left;
+    background: white;
+    display: block;
+    min-height: 1px;
+}
+
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    transform: translateZ(0);
+}
+
+.slick-track:before {
+    content: "";
+    display: table;
+}
+
+.is-relative {
+    position: relative;
+}
+
+.product-cover {
+    position: relative;
+    width: 100%;
+}
+
+.product-cover::before {
+    content: "";
+    display: block;
+    padding-top: 125%;
+}
+
+.product-cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: .1875rem;
+}
+
+.is-absolute {
+    position: absolute !important;
+}
+
+.product-title {
+    margin-top: .75rem;
+    font-size: 1.2em;
+    margin-bottom: .25rem;
+}
+
+.extra-bold {
+    font-size: 1.7em;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.product-content {
+    margin-top: -7em;
+    margin-left: 1em;
+}
+
+.white-deep {
+    color: white;
+}
+
+.product-price {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.slick-arrow {
+    top: 40%;
+    background-color: #ffffff;
+    border: none;
+    /* color: white; */
+    padding: 18px 21.5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 0 7px -4px #000;
+    z-index: 1;
+    position: absolute;
+    outline: none;
+    /* top: 45%; */
+}
+
+.slick-next,
+.slick-next-endow,
+.letgo-slick-next,
+.vinhomes-slick-next,
+.danang-slick-next,
+.top1000-slick-next,
+.slick-next-option-place,
+.slick-next-recommend,
+.guide-slick-next {
+    right: 0em;
+}
+
+.slick-prev,
+.slick-prev-endow,
+.letgo-slick-prev,
+.vinhomes-slick-prev,
+.danang-slick-prev,
+.top1000-slick-prev,
+.slick-prev-option-place,
+.slick-prev-recommend,
+.guide-slick-prev {
+    margin-left: -1%;
+    opacity: 0.5;
+}
+
+
+/* End Hot Place */
+
+
+/* Css Ưu đãi độc quyền css */
+
+.section-title {
+    width: 95%;
+    margin: 0px auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.section-title .section-title-left {
+    float: left;
+}
+
+.section-title .section-title-left h2 {
+    font-size: 24px;
+    color: #222222;
+    width: auto;
+    margin: 0px 0px;
+}
+
+.section-title-left p {
+    font-size: 16px;
+    color: #555555;
+    margin: 8px 0px 0px;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+.section-title .section-title-right a {
+    color: #f65e39;
+    font-size: 16px;
+    width: auto;
+    float: right;
+    margin: 0px 0px;
+    text-decoration: none;
+}
+
+.image-wrapper {
+    width: 97%;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.letgo-wrapper {
+    width: 97%;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.letgo-content {
+    display: inline-block;
+    width: 33.3%;
+    height: auto;
+    overflow: hidden;
+    padding: 0px 8px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.image-content {
+    display: inline-block;
+    width: 33.3%;
+    height: auto;
+    overflow: hidden;
+    padding: 0px 8px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.btn-left {
+    background-color: #ffffff;
+    border: none;
+    padding: 18px 21.5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 0 7px -4px #000;
+    z-index: 1;
+    position: absolute;
+    margin-top: 60px;
+    left: 20px;
+    top: 922px;
+}
+
+.btn-right {
+    background-color: #ffffff;
+    border: none;
+    padding: 18px 21.5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 0 7px -4px #000;
+    z-index: 1;
+    position: absolute;
+    margin-top: 60px;
+    right: 20px;
+    top: 922px;
+}
+
+.btn-left:hover {
+    color: #f65e39;
+    box-shadow: 0 0 7px -4px #f65e39;
+    transition: all 0.5s ease 0s;
+}
+
+.btn-right:hover {
+    color: #f65e39;
+    box-shadow: 0 0 7px -4px #f65e39;
+    transition: all 0.5s ease 0s;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.description2020 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.description2020 p {
+    text-transform: uppercase;
+    font-size: 0.76rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.description2020 span {
+    color: rgb(21, 27, 38);
+    font-size: 1rem;
+}
+
+
+/* End Ưu đãi độc quyền Css */
+
+
+/* LET'S GO TO DA NANG */
+
+.has-host-section {
+    line-height: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+}
+
+.title-letgo-danang .title {
+    text-align: left;
+    margin: auto;
+    padding-left: 8px;
+}
+
+.container-letgo-danang {
+    width: 100%;
+    padding-right: 9px;
+    padding-left: 9px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-content-letgo-danang .row-letgo-danang {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.main-content-letgo-danang .row-letgo-danang .col-2 {
+    display: flex;
+    max-width: 20%;
+}
+
+.item-box {
+    padding: 12px 8px 12px 8px;
+    box-sizing: border-box;
+}
+
+.item-box .image-homestay {
+    padding: 8px;
+    padding-left: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 52%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hidden-image {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.item-box .description-content .title-box {
+    text-transform: uppercase;
+    color: #888888;
+    font-size: 12px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.item-box .description-content .promotion-title a {
+    color: #222222;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.description-homestay .description-room {
+    margin: auto;
+    font-size: 14px;
+}
+
+.description-content .item-price .price {
+    margin-right: 18px;
+    font-weight: bold;
+}
+
+.item-box .image-homestay .label-promotion {
+    margin-left: 12px;
+    font-size: .75rem;
+    background: #f65e39;
+    color: #fff;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.item-box .description-content .address-item a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.item-box .description-content .promotion-title a:hover {
+    color: #f65e39;
+}
+
+.item-box .description-content .address-item a:hover {
+    color: #f65e39;
+}
+
+.rare-item i {
+    color: rgb(255, 176, 37);
+}
+
+
+/* CLOSE SECTION LET'S GO TO DA NANG */
+
+
+/* Section Goi y kham pha */
+
+.row-item-top-places {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.row-item-top-places .col-3 {
+    width: 426px;
+}
+
+.row-item-top-places .col-3 .item-box-top-place {
+    padding: 8px 8px 8px 8px;
+    border-radius: 5px;
+}
+
+.row-item-top-places .col-3 .item-box-top-place .image-top-places {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+}
+
+.top-places-image {
+    position: absolute;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.title-post {
+    padding-top: 20px;
+}
+
+.detail-post {
+    margin-top: 70px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+.label-infor {
+    margin-left: 12px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 15px;
+    padding: 6px 28px 6px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+
+/* End goi y kham pha */
+
+
+/* Hương dan su dung */
+
+.wrapper-hdsd {
+    width: 97%;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.title-hdsd {
+    margin-top: 10em;
+    text-align: center;
+    vertical-align: bottom;
+    position: absolute;
+}
+
+.title-hdsd h4 {
+    padding-left: 1rem;
+    margin: 0 0 0 0;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.background {
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+}
+
+
+/* End huong dan su dung */
+
+
+/* End Places */
+
+
+/* Footer */
+
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper-footer {
+    padding: 0 2em;
+}
+
+.footer .app-introduct {
+    width: 100%;
+    height: auto;
+}
+
+.footer .app-introduct .left-content {
+    width: 49%;
+    height: auto;
+    float: left;
+}
+
+.footer .app-introduct .left-content img {
+    width: 343px;
+    height: auto;
+}
+
+.footer .app-introduct .left-content .text-introduct h4 {
+    height: auto;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    font-weight: 900;
+    margin-top: 0;
+    line-height: 1.25;
+    margin: 0px 0px 25px;
+}
+
+.footer .app-introduct .left-content .text-introduct p {
+    margin: 0 0 1rem;
+    font-size: 16px;
+    margin: 0px 0px 16px;
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    letter-spacing: 1px;
+}
+
+.footer .app-introduct .left-content .img-introduct {
+    height: auto;
+    width: 86%;
+    overflow: hidden;
+}
+
+.footer .app-introduct .left-content .img-introduct .img-qrcode {
+    border: 1px solid rgba(0, 0, 0, .09);
+    padding: 12px;
+    margin-right: 12px;
+    width: 146px;
+    height: 146px;
+    float: left;
+    overflow: hidden;
+}
+
+.footer .app-introduct .left-content .img-introduct .img-download img {
+    width: 198px;
+}
+
+.footer .app-introduct .left-content .img-introduct .img-download {
+    overflow: hidden;
+    margin: 0;
+    position: sticky;
+    top: 11%;
+}
+
+.footer .app-introduct .right-content {
+    width: 40%;
+    height: auto;
+    display: flex;
+}
+
+.footer .app-introduct .right-content img {
+    width: 99%;
+    height: auto;
+}
+
+.footer .col-contact {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 48px 0px;
+}
+
+.footer .col-contact .column {
+    float: left;
+    width: 18%;
+    height: auto;
+    padding: 0px 12px;
+}
+
+.footer .col-contact .column img {
+    width: 95%;
+    height: auto;
+}
+
+.footer .col-contact .column .infor img {
+    float: left;
+    width: 50px;
+    height: auto;
+    margin-top: 1px;
+    display: flex;
+}
+
+.footer .col-contact .column .infor {
+    margin-top: 15px;
+}
+
+.footer .col-contact .column .infor .text {
+    line-height: 1px;
+    height: auto;
+}
+
+.footer .col-contact .column .text .text-infor {
+    line-height: 15px;
+    margin-left: 49px;
+}
+
+.footer .col-contact .column .text .text-infor a {
+    text-decoration: none;
+    color: #222;
+}
+
+.footer .col-contact .column h4 {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer .col-contact .column .home-stay {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer .col-contact .column .mini-download {
+    padding: 20px 0;
+    margin-right: 12px;
+    width: auto;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+
+.footer .col-contact .column .mini-download .mini-qrcode {
+    border: 1px solid rgba(0, 0, 0, .09);
+    padding: 12px;
+    float: left;
+    overflow: hidden;
+    width: 62px;
+    height: 62px;
+}
+
+.footer .col-contact .column .mini-download .app {
+    width: 100px;
+    height: auto;
+    padding: 4px 18px;
+}
+
+.footer .col3-contact {
+    width: 100%;
+}
+
+.footer .col3-contact .column1 {
+    float: left;
+    width: 24%;
+    height: auto;
+    padding: 0px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 14%;
+}
+
+.footer .col3-contact .column2 {
+    float: left;
+    width: 23%;
+    height: auto;
+    padding: 0px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -3%;
+}
+
+.footer .col3-contact .column3 {
+    float: left;
+    width: 18%;
+    height: auto;
+    padding: 0px 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col3-contact .column2 .icon-brand {
+    width: 70%;
+}
+
+.brand {
+    width: 47%;
+    height: auto;
+    padding: 1px;
+}
+
+.column3 .icon-social {
+    width: 70%;
+}
+
+.icon {
+    width: 14%;
+}
+
+
+/* End Footer */
+
+
+/* selection */
+
+.fillter-bar {
+    margin-top: 5em;
+    padding-left: 1em;
+}
+
+.section {
+    padding-left: 1em;
+    margin-top: 2em;
+}
+
+.container-fillter-bar {
+    margin: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* margin-left: 20px; */
+}
+
+.fillters-grid,
+.fillter-flex {
+    display: flex;
+}
+
+.day-fill {
+    display: none;
+}
+
+.btn-fillter {
+    padding: .5em .8em;
+    font-size: .875rem;
+    margin-right: .75rem;
+    border-radius: 5px;
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    color: #222;
+    background-color: #fff;
+}
+
+.btn-fillter:hover {
+    color: #fff;
+    background-color: #f65e39;
+    transition: all .3s;
+    border: 1px solid #f65e39;
+}
+
+
+/* end selection */
+
+
+/* Navigate css*/
+
+.navigation-main {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0px 488px;
+}
+
+.one-20 {
+    text-align: center;
+}
+
+.navigate {
+    text-align: center;
+}
+
+.navigate ul {
+    padding: 0px 50px 0px 0px;
+    margin: 5px;
+}
+
+.navigate ul li {
+    float: left;
+    display: inline;
+    padding: 7px 10px;
+    color: #000;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.navigate ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.circle-num {
+    margin-top: -1em;
+    width: 20px;
+    height: 20px;
+    background-color: #f65e39;
+    border-radius: 50px;
+    color: #fff;
+}
+
+
+/* Da Nang Page*/
+
+.container-fluid {
+    line-height: 1.5em;
+    color: #222222;
+}
+
+
+/* OPTIONS PLACES */
+
+.places {
+    color: #222222;
+}
+
+.box-places-wrapper {
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0px 10px 0px;
+    z-index: -1;
+}
+
+.box-content {
+    background: white;
+    display: inline-block;
+}
+
+.box-place {
+    padding: 4px 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06);
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.box-place a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.box-place .title-place {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.advertisement-image {
+    position: relative;
+    max-width: 100%;
+}
+
+.adv-image {
+    margin: 20px;
+}
